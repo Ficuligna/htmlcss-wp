@@ -116,12 +116,65 @@ body> main> section:nth-child(2){
   background-color: white;
   float: left;
 }
+
 body> main> aside{
   width: calc(30% - 1vw);
   float: right;
 }
+#menuleft{
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+@media only screen and (max-width:800px) {
+    body> main> section:nth-child(2){
+      width: 100%;
+  }
+    body> main> section:nth-child(1){
+    display: none;
+  }
+    body> main> section:nth-child(1) div{
+      background-color: rgba(255, 255, 255, 0.5);
+  }
+    #search{
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    #tags{
+      display: none;
+
+    }
+    body> main> aside{
+      width: 20%;
+      position: fixed;
+      top: 0;
+      right: 0;
+  }
+  #menuleft{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
+  #menuright{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+  }
 
 
+}
 
 /* colonna sinistra */
 
